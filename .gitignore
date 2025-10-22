@@ -1,0 +1,41 @@
+# --- Entorno Virtual ---
+# Ignora la carpeta del entorno virtual (venv)
+.venv/
+venv/
+*.env
+.env
+
+# --- Datos ---
+# Ignora datasets grandes. 
+# Es mala práctica subir datos al repositorio.
+*.csv
+*.data
+*.sqlite
+
+# --- Modelos Guardados ---
+# Ignora los modelos entrenados y scalers
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.onnx
+
+# --- Python & Jupyter Cache ---
+# Ignora los archivos de caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignora los checkpoints de Jupyter
+.ipynb_checkpoints/
+
+# --- Configuración de IDEs (VS Code / PyCharm) ---
+# Ignora configuraciones locales del editor
+.vscode/
+.idea/
+*.iml
+
+# --- Archivos de Sistema Operativo ---
+# Ignora archivos de metadatos de macOS y Windows
+.DS_Store
+Thumbs.db
